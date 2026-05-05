@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Javier Hernández | Desarrollador DAM</title>
+    <meta name="description"
+        content="Portfolio de Pedro Javier Hernández Rienda. Desarrollador de aplicaciones multiplataforma especializado en Full Stack.">
+    <meta property="og:title" content="Pedro Javier Hernández | Desarrollador DAM">
+    <meta property="og:description"
+        content="Especialista en desarrollo de aplicaciones multiplataforma. Soluciones digitales elegantes, eficientes y escalables.">
+    <meta property="og:image" content="pjimagen.jpg">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <noscript>
+        <style>
+            section {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body>
+
+
+    <nav class="nav-bar fixed w-full z-50 top-0">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-6 lg:px-8 py-4">
+            <a href="#inicio" class="text-lg font-display tracking-tight">
+                PH<span class="text-accent">.</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-10">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
+                <a href="#experiencia" class="nav-link">Experiencia</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#contacto" class="hidden md:inline-block btn-outline text-xs py-2.5 px-6">
+                    Hablemos
+                </a>
+                <button id="menuToggle"
+                    class="md:hidden flex flex-col justify-center items-center w-9 h-9 rounded transition-colors"
+                    aria-label="Abrir menú">
+                    <span class="hamburger-line block w-5 h-0.5 bg-white/70 rounded-sm transition-all"></span>
+                    <span class="hamburger-line block w-5 h-0.5 bg-white/70 rounded-sm transition-all mt-1.5"></span>
+                    <span class="hamburger-line block w-5 h-0.5 bg-white/70 rounded-sm transition-all mt-1.5"></span>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="md:hidden hidden mx-6 mb-3 mobile-menu">
+            <div class="flex flex-col p-5 space-y-3">
+                <a href="#inicio"
+                    class="nav-link-mobile py-2 text-sm text-secondary hover:text-white transition-colors">Inicio</a>
+                <a href="#sobre-mi"
+                    class="nav-link-mobile py-2 text-sm text-secondary hover:text-white transition-colors">Sobre Mí</a>
+                <a href="#experiencia"
+                    class="nav-link-mobile py-2 text-sm text-secondary hover:text-white transition-colors">Experiencia</a>
+                <a href="#proyectos"
+                    class="nav-link-mobile py-2 text-sm text-secondary hover:text-white transition-colors">Proyectos</a>
+                <a href="#contacto"
+                    class="nav-link-mobile py-2 text-sm text-secondary hover:text-white transition-colors">Contacto</a>
+                <a href="#contacto" class="btn-primary text-center text-xs py-3 mt-2">Hablemos</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <header id="inicio" class="min-h-screen flex items-center pt-24 pb-16 px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-5 gap-16 items-center w-full">
+            <div class="md:col-span-3">
+                <span class="section-label block mb-6">
+                    Técnico Superior en Desarrollo de Aplicaciones Multiplataforma
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl mb-6 leading-tight">
+                    Pedro Javier <br>
+                    <span class="text-accent">Hernández Rienda</span>
+                </h1>
+                <p class="text-secondary text-base mb-10 max-w-lg leading-relaxed">
+                    Especialista en desarrollo de aplicaciones multiplataforma. Transformo ideas complejas en soluciones
+                    digitales elegantes, eficientes y escalables.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
+                    <a href="#sobre-mi" class="btn-outline">Mi Perfil</a>
+                </div>
+            </div>
+            <div class="md:col-span-2 flex justify-center md:justify-end">
+                <div class="relative">
+                    <div class="photo-frame w-64 h-72 sm:w-72 sm:h-80 lg:w-80 lg:h-96">
+                        <img src="pjimagen.jpg" alt="Foto de Pedro Javier"
+                            class="w-full h-full object-cover rounded-[3px]">
+                    </div>
+                    <div class="absolute -bottom-4 -left-4 bg-surface border border-[#1f1f1f] px-4 py-3 rounded-[3px]">
+                        <span class="text-xs block text-muted"
+                            style="font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase;">Experiencia
+                            en</span>
+                        <span class="text-accent font-medium text-sm">Full Stack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="sobre-mi" class="py-24 px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-5 gap-12">
+                <div class="md:col-span-3">
+                    <span class="section-label block mb-4">Perfil</span>
+                    <h2 class="text-3xl mb-5">Sobre mí</h2>
+                    <span class="accent-line mb-6"></span>
+                    <p class="text-secondary text-sm leading-relaxed mt-6">
+                        Tengo 24 años y soy Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM).
+                        Desde que escribí mis primeras líneas de código, supe que quería dedicarme a construir
+                        software que resolviera problemas reales.
+                    </p>
+                    <p class="text-secondary text-sm leading-relaxed mt-4">
+                        Mi formación me ha dado una base sólida en programación orientada a objetos, diseño de
+                        bases de datos, desarrollo móvil y web. Pero lo que realmente me define es la curiosidad
+                        por seguir aprendiendo: cada proyecto es una oportunidad para explorar nuevas tecnologías,
+                        mejorar mis prácticas y entregar soluciones con un código limpio y mantenible.
+                    </p>
+                </div>
+                <div class="md:col-span-2 grid grid-cols-2 gap-2">
+                    <div class="skill-card">
+                        <span class="skill-icon">📱</span>
+                        <h3 class="text-sm font-medium mb-1"
+                            style="font-family: 'Inter', sans-serif; font-weight: 600;">Mobile</h3>
+                        <p class="text-xs text-muted">Android, Flutter, iOS</p>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">💻</span>
+                        <h3 class="text-sm font-medium mb-1"
+                            style="font-family: 'Inter', sans-serif; font-weight: 600;">Desktop</h3>
+                        <p class="text-xs text-muted">Java, Python, HTML, CSS, JavaScript</p>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">🌐</span>
+                        <h3 class="text-sm font-medium mb-1"
+                            style="font-family: 'Inter', sans-serif; font-weight: 600;">Web</h3>
+                        <p class="text-xs text-muted">React, TypeScript</p>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">🗄️</span>
+                        <h3 class="text-sm font-medium mb-1"
+                            style="font-family: 'Inter', sans-serif; font-weight: 600;">Bases de Datos</h3>
+                        <p class="text-xs text-muted">PostgreSQL, MySQL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="experiencia" class="py-24 px-6 lg:px-8 border-t border-[#1f1f1f]">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-5 gap-12">
+                <div class="md:col-span-3">
+                    <span class="section-label block mb-4">Trayectoria</span>
+                    <h2 class="text-3xl mb-5">Experiencia</h2>
+                    <span class="accent-line mb-6"></span>
+                    <p class="text-secondary text-sm leading-relaxed mt-6">
+                        Mi camino en el desarrollo comenzó de forma autodidacta, dedicando un año intensivo a
+                        aprender las bases de la programación, algoritmos y estructuras de datos. Esta etapa me
+                        permitió desarrollar una gran capacidad de resolución de problemas y autonomía.
+                    </p>
+                    <p class="text-secondary text-sm leading-relaxed mt-4">
+                        Posteriormente, consolidé mis conocimientos durante 6 meses como desarrollador en prácticas
+                        en <strong>Education Software SL</strong>. Durante este periodo, trabajé en un entorno
+                        profesional real, participando en el ciclo de vida de aplicaciones de software educativo
+                        y colaborando con equipos técnicos para implementar nuevas funcionalidades.
+                    </p>
+                </div>
+                <div class="md:col-span-2 flex flex-col gap-4 md:pt-16">
+                    <div class="skill-card">
+                        <span
+                            class="text-accent text-[0.65rem] uppercase tracking-widest font-bold block mb-2">Prácticas
+                            · 6 Meses</span>
+                        <h3 class="text-sm font-medium mb-1"
+                            style="font-family: 'Inter', sans-serif; font-weight: 600;">Education Software SL</h3>
+                        <p class="text-xs text-muted">Desarrollo de software educativo y mantenimiento de aplicaciones.
+                        </p>
+                    </div>
+                    <div class="skill-card">
+                        <span
+                            class="text-accent text-[0.65rem] uppercase tracking-widest font-bold block mb-2">Autodidacta
+                            · 1 Año</span>
+                        <h3 class="text-sm font-medium mb-1"
+                            style="font-family: 'Inter', sans-serif; font-weight: 600;">Formación Independiente</h3>
+                        <p class="text-xs text-muted">Bases de programación, lógica y proyectos personales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="proyectos" class="py-24 px-6 lg:px-8 bg-surface">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-between items-end mb-14">
+                <div>
+                    <span class="section-label block mb-4">Trabajos</span>
+                    <h2 class="text-3xl lg:text-4xl">Proyectos Destacados</h2>
+                    <p class="text-secondary text-sm mt-3">Una selección de mis trabajos más recientes.</p>
+                </div>
+                <div class="hidden md:block">
+                    <a href="https://github.com/PedroHdz9" target="_blank" rel="noopener noreferrer"
+                        class="contact-link text-xs uppercase tracking-widest hover:text-accent">Ver todos en GitHub
+                        →</a>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+                <article class="project-card flex flex-col">
+                    <div class="project-image-wrap h-48">
+                        <img src="assets/websolar1.jpg" alt="EcoNova Web" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex gap-2 mb-4">
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">CSS</span>
+                        </div>
+                        <h3 class="text-base font-medium mb-2"
+                            style="font-family: 'Inter', sans-serif; font-weight: 600;">EcoNova | Web Empresarial</h3>
+                        <p class="text-secondary text-sm leading-relaxed flex-1">
+                            Sitio web para empresa del sector ecologista. Display de productos, servicios y experiencia
+                            de la empresa.
+                        </p>
+                        <div class="mt-5 pt-4 border-t border-[#1f1f1f]">
+                            <a href="https://github.com/PedroHdz9" target="_blank" rel="noopener noreferrer"
+                                class="text-accent text-sm hover:opacity-80 transition-opacity">Ver Detalles</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="project-card flex flex-col">
+                    <div class="project-image-wrap h-48">
+                        <img src="assets/musicweb.jpg" alt="Reproductor Música" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex gap-2 mb-4">
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">Node.js</span>
+                        </div>
+                        <h3 class="text-base font-medium mb-2"
+                            style="font-family: 'Inter', sans-serif; font-weight: 600;">Reproductor Música Web | Estilo
+                            Spotify</h3>
+                        <p class="text-secondary text-sm leading-relaxed flex-1">
+                            Reproductor de música web con interfaz inspirada en Spotify. Gestión de canciones, listas de
+                            reproducción y reproducción en tiempo real.
+                        </p>
+                        <div class="mt-5 pt-4 border-t border-[#1f1f1f]">
+                            <a href="https://github.com/PedroHdz9" target="_blank" rel="noopener noreferrer"
+                                class="text-accent text-sm hover:opacity-80 transition-opacity">Ver Detalles</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="project-card flex flex-col">
+                    <div class="project-image-wrap h-48">
+                        <img src="assets/inventory.jpg" alt="InventoryManager" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex gap-2 mb-4">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">CSS</span>
+                        </div>
+                        <h3 class="text-base font-medium mb-2"
+                            style="font-family: 'Inter', sans-serif; font-weight: 600;">InventoryManager | Gestión de
+                            Stock</h3>
+                        <p class="text-secondary text-sm leading-relaxed flex-1">
+                            Plataforma de gestión de inventarios con funcionalidades avanzadas, control de stock y
+                            gestión de pedidos.
+                        </p>
+                        <div class="mt-5 pt-4 border-t border-[#1f1f1f]">
+                            <a href="https://github.com/PedroHdz9" target="_blank" rel="noopener noreferrer"
+                                class="text-accent text-sm hover:opacity-80 transition-opacity">Ver Detalles</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contacto" class="py-24 px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto">
+            <div class="mb-14">
+                <span class="section-label block mb-4">Contacto</span>
+                <h2 class="text-3xl lg:text-4xl mb-4">¿Tienes un proyecto en mente?</h2>
+                <p class="text-secondary text-sm">Estoy disponible para nuevas oportunidades y colaboraciones.</p>
+            </div>
+
+            <form id="contactForm" data-email="pedrojavier.hernandez.rienda@gmail.com" method="POST">
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <label class="section-label block mb-3">Nombre</label>
+                        <input name="name" type="text" placeholder="Tu nombre" required class="form-input">
+                    </div>
+                    <div>
+                        <label class="section-label block mb-3">Email</label>
+                        <input name="email" type="email" placeholder="correo@ejemplo.com" required class="form-input">
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <label class="section-label block mb-3">Mensaje</label>
+                    <textarea name="message" rows="5" placeholder="¿En qué puedo ayudarte?" required
+                        class="form-input"></textarea>
+                </div>
+                <button type="submit" class="btn-primary w-full md:w-auto">
+                    Enviar Propuesta
+                </button>
+            </form>
+
+            <hr class="divider my-14">
+
+            <div class="flex flex-wrap justify-center gap-x-10 gap-y-4">
+                <a href="mailto:pedrojavier.hernandez.rienda@gmail.com" class="contact-link flex items-center gap-2">
+                    <span class="text-xs">📧</span>
+                    pedrojavier.hernandez.rienda@gmail.com
+                </a>
+                <span class="contact-link flex items-center gap-2">
+                    <span class="text-xs">📍</span>
+                    España
+                </span>
+                <a href="https://github.com/PedroHdz9" target="_blank" rel="noopener noreferrer"
+                    class="contact-link flex items-center gap-2">
+                    <svg class="w-3.5 h-3.5" viewBox="0 0 16 16" fill="currentColor">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z">
+                        </path>
+                    </svg>
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/pedro-javier-hernandez-rienda-5785003a3" target="_blank"
+                    rel="noopener noreferrer" class="contact-link flex items-center gap-2">
+                    <span class="text-xs">💼</span>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="py-10 text-center text-muted text-xs tracking-wider uppercase">
+        <p>© 2026 Pedro Javier Hernández Rienda. Desarrollador de Software</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
